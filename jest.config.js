@@ -1,3 +1,3 @@
 module.exports = {
-  testEnvironment: 'jest-environment-node' // Browser alternative: 'jest-environment-jsdom',
+  testEnvironment: 'jest-environment-jsdom' // Node alternative: 'jest-environment-node',
 }
