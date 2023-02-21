@@ -1,8 +1,10 @@
-import React from 'react';
+import React from 'react'
 import {render} from '@testing-library/react'
-import CalculatorDisplay from '../calculator-display';
+import CalculatorDisplay from '../calculator-display'
 
 test('should render', () => {
-  const {container} = render(<CalculatorDisplay value="0"/>)
-  console.log(container);
+  const {container} = render(<CalculatorDisplay value="0" />)
+  expect(container.innerHTML).toMatchInlineSnapshot(
+    `"<div class=\\"css-lq9ahq-calculator-display--CalculatorDisplay\\"><div class=\\"autoScalingText\\" style=\\"transform: scale(1,1);\\" data-testid=\\"total\\">0</div></div>"`,
+  )
 })
